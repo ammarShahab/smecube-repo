@@ -1,4 +1,6 @@
-import Navbar from "./Component/Navbar";
+import Footer from "../Component/Footer";
+import Home from "../Component/Home";
+import Navbar from "../Component/shared/Navbar";
 
 const RootLayout = () => {
   return (
@@ -6,6 +8,12 @@ const RootLayout = () => {
       <nav>
         <Navbar />
       </nav>
+      <main>
+        <Home />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
