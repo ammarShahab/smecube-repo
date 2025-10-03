@@ -1,9 +1,23 @@
 import { Menu, X } from "lucide-react";
 import React, { useState } from "react";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
-  const navItems = ["হোম", "সার্ভিস", "প্রাইসিং", "টুলস", "যোগাযোগ"];
+  const navItems = [
+    { name: "হোম", path: "/" },
+    { name: "সার্ভিস", path: "/services" },
+    { name: "প্রাইসিং", path: "/pricing" },
+    { name: "টুলস", path: "/tools" },
+    { name: "যোগাযোগ", path: "/contact" },
+  ];
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const navLinkClass = ({ isActive }) =>
+    `text-gray-700 hover:text-red-500 transition-colors font-medium ${
+      isActive ? "text-red-500 border-b-2 border-red-500 pb-1" : ""
+    }`;
+
   return (
     <section className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md z-50">
       <div className="container mx-auto px-4 py-4">
@@ -23,18 +37,10 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {navItems.map((item, index) => (
-              <a
-                key={index}
-                href="#"
-                className={`text-gray-700 hover:text-red-500 transition-colors font-medium ${
-                  index === 0
-                    ? "text-red-500 border-b-2 border-red-500 pb-1"
-                    : ""
-                }`}
-              >
-                {item}
-              </a>
+            {navItems.map((item) => (
+              <NavLink key={item.path} to={item.path} className={navLinkClass}>
+                {item.name}
+              </NavLink>
             ))}
           </nav>
 
@@ -55,14 +61,15 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4 animate-fade-in">
-            {navItems.map((item, index) => (
-              <a
-                key={index}
-                href="#"
+            {navItems.map((item) => (
+              <NavLink
+                key={item.path}
+                to={item.path}
                 className="block text-gray-700 hover:text-red-500 transition-colors font-medium py-2"
+                onClick={() => setMobileMenuOpen(false)} // close menu on click
               >
-                {item}
-              </a>
+                {item.name}
+              </NavLink>
             ))}
             <button className="w-full bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 font-medium">
               রেজিস্ট্রেশন

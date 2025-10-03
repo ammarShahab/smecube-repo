@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "icon": "📱",
+    "title": "ফেসবুক বুস্টিং",
+    "color": "bg-blue-100",
+    "delay": 0,
+    "path": "facebook-boosting"
+  },
+  {
+    "id": 2,
+    "icon": "🛒",
+    "title": "ই-কমার্স সলিউশন",
+    "color": "bg-green-100",
+    "delay": 100,
+    "path": "ecommerce-solution"
+  },
+  {
+    "id": 3,
+    "icon": "💻",
+    "title": "ডেভেলপ ওয়েবসাইট",
+    "color": "bg-indigo-100",
+    "delay": 200,
+    "path": "website-development"
+  },
+  {
+    "id": 4,
+    "icon": "📊",
+    "title": "ডোমেইন হোস্টিং",
+    "color": "bg-purple-100",
+    "delay": 300,
+    "path": "domain-hosting"
+  },
+  {
+    "id": 5,
+    "icon": "📚",
+    "title": "ল্যান্ডিং পেজ",
+    "color": "bg-orange-100",
+    "delay": 400,
+    "path": "landing-page"
+  },
+  {
+    "id": 6,
+    "icon": "🎨",
+    "title": "ব্র্যান্ড এসপ্রেসন",
+    "color": "bg-teal-100",
+    "delay": 500,
+    "path": "brand-expression"
+  },
+  {
+    "id": 7,
+    "icon": "✅",
+    "title": "বিজনেস কনসালটিং",
+    "color": "bg-yellow-100",
+    "delay": 600,
+    "pagetitle": "প্রোফেশনাল এডভাইজের মাধ্যমে সাফল্য অর্জন",
+    "path": "business-consulting"
+  },
+  {
+    "id": 8,
+    "icon": "📱",
+    "title": "ব্রান্ড পেইজ মেটোয়াপ",
+    "color": "bg-cyan-100",
+    "delay": 700,
+    "path": "brand-page-setup"
+  },
+  {
+    "id": 9,
+    "icon": "🔥",
+    "title": "গ্রাফিক ডিজাইন",
+    "color": "bg-pink-100",
+    "delay": 800,
+    "path": "graphic-design"
+  },
+  {
+    "id": 10,
+    "icon": "🎯",
+    "title": "টার্গেট মেটোয়াপ",
+    "color": "bg-emerald-100",
+    "delay": 900,
+    "path": "target-setup"
+  },
+  {
+    "id": 11,
+    "icon": "🎁",
+    "title": "ইমু ফিচার",
+    "color": "bg-rose-100",
+    "delay": 1000,
+    "path": "imu-feature"
+  },
+  {
+    "id": 12,
+    "icon": "💼",
+    "title": "বিজনেস ট্রেইনিং",
+    "color": "bg-violet-100",
+    "delay": 1100,
+    "path": "business-training"
+  }
+]
