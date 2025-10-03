@@ -1,8 +1,13 @@
-import React from "react";
 import FbBoostBanner from "../Component/shared/FbBoostBanner";
+import ClientMarquee from "../Component/ClientMarquee";
 
 const FacebookBoost = () => {
-  return <FbBoostBanner />;
+  return (
+    <>
+      <FbBoostBanner />
+      <ClientMarquee />
+    </>
+  );
 };
 
 export default FacebookBoost;
