@@ -27,7 +27,7 @@ const services = [
   },
 ];
 
-const BusinessConsulting = () => {
+const BusinessMngConsulting = () => {
   return (
     <section className="bg-white py-16 px-6">
       <div className="max-w-6xl mx-auto text-center">
@@ -66,4 +66,4 @@ const BusinessConsulting = () => {
   );
 };
 
-export default BusinessConsulting;
+export default BusinessMngConsulting;

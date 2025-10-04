@@ -6,7 +6,7 @@ const FbBoostBanner = () => {
       <div className="mx-auto w-full overflow-hidden mt-16">
         <div className="grid lg:grid-cols-2 justify-between items-center">
           {/* Left Content Section */}
-          <div className="flex flex-col justify-center space-y-6">
+          <div className="flex flex-col justify-center space-y-6 p-2">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
               প্রোফেশনাল
               <br />

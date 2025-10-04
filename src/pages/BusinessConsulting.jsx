@@ -1,9 +1,10 @@
+import React from "react";
 import FbBoostBanner from "../Component/shared/FbBoostBanner";
 import ClientMarquee from "../Component/ClientMarquee";
-import WhyChooseUs from "../Component/WhyChooseUs";
 import BusinessMngConsulting from "../Component/BusinessMngConsulting";
+import WhyChooseUs from "../Component/WhyChooseUs";
 
-const FacebookBoost = () => {
+const BusinessConsulting = () => {
   return (
     <>
       <FbBoostBanner />
@@ -14,4 +15,4 @@ const FacebookBoost = () => {
   );
 };
 
-export default FacebookBoost;
+export default BusinessConsulting;

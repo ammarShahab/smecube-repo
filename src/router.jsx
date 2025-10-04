@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router";
 import RootLayout from "./layouts/RootLayout";
 import Home from "./pages/HomePage";
 import FacebookBoost from "./pages/FacebookBoost";
+import BusinessConsulting from "./pages/BusinessConsulting";
+import BrandPageSetup from "./pages/BrandPageSetup";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,18 @@ const router = createBrowserRouter([
         // loader: () => fetch("/services.json"),
         // Component: ServicePageLayout,
         element: <FacebookBoost />,
+      },
+      {
+        path: "service/business-consulting",
+        // loader: () => fetch("/services.json"),
+        // Component: ServicePageLayout,
+        element: <BusinessConsulting />,
+      },
+      {
+        path: "service/brand-page-setup",
+        // loader: () => fetch("/services.json"),
+        // Component: ServicePageLayout,
+        element: <BrandPageSetup />,
       },
       /* {
         path: "auth",
